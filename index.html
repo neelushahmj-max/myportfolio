@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilu Shah — Creative Full-Stack Developer & UI/UX Craftsman</title>
+  <meta name="description" content="Award-winning portfolio of Nilu Shah — Creative Full-Stack Developer & UI/UX Craftsman pushing digital boundaries with core web technologies.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- ==========================================================================
+       MAIN HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="container header-container">
+      
+      <!-- Top Left Logo (Nilu Shah) -->
+      <a href="#hero" class="logo-brand hover-target">
+        <span class="logo-text">Nilu Shah</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Top Center Small Text (Lower Alignment) -->
+      <div class="header-tagline">
+        <span class="pulse-icon"></span>
+        <span>learning from core everyday</span>
+      </div>
+
+      <!-- Top Right Actions (Theme Toggle & Sidebar Button) -->
+      <div class="header-right">
+        <button class="theme-toggle-btn hover-target" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <button class="menu-toggle-btn hover-target" id="menu-toggle-btn" aria-label="Open Navigation Menu">
+          <span>MENU</span>
+          <div class="menu-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CURTAIN SIDEBAR DRAWER MENU
+       ========================================================================== -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar-curtain" id="sidebar-curtain">
+    <div class="sidebar-header">
+      <div class="logo-brand">
+        <span class="logo-text">Nilu Shah</span>
+        <span class="logo-dot"></span>
+      </div>
+      <button class="sidebar-close-btn hover-target" id="sidebar-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="#hero" class="sidebar-link hover-target"><span class="nav-title">Home</span> <span class="nav-num">01</span></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#about" class="sidebar-link hover-target"><span class="nav-title">About</span> <span class="nav-num">02</span></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#portfolio" class="sidebar-link hover-target"><span class="nav-title">Portfolio</span> <span class="nav-num">03</span></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#blog" class="sidebar-link hover-target"><span class="nav-title">Blog</span> <span class="nav-num">04</span></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#contact" class="sidebar-link hover-target"><span class="nav-title">Contact</span> <span class="nav-num">05</span></a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-info-row">
+        <span>Status:</span>
+        <span style="color: var(--accent-green);">🟢 Open for projects</span>
+      </div>
+      <div class="sidebar-info-row">
+        <span>Location:</span>
+        <span>Worldwide / Remote</span>
+      </div>
+      <div class="sidebar-info-row">
+        <span>Email:</span>
+        <a href="mailto:nilu@example.com" class="hover-target" style="color: var(--accent-cyan);">nilu@example.com</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO LANDING SECTION (SKETCH PERFECT)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    
+    <!-- Flowing Text Background (FREELANCER swinging behind photo) -->
+    <div class="hero-flowing-bg">
+      <div class="flowing-text-track">
+        <span class="flowing-text-item">FREELANCER</span>
+        <span class="flowing-text-item accent">•</span>
+        <span class="flowing-text-item">FULL STACK DEVELOPER</span>
+        <span class="flowing-text-item accent">•</span>
+        <span class="flowing-text-item">CREATIVE DESIGNER</span>
+        <span class="flowing-text-item accent">•</span>
+        <span class="flowing-text-item">FREELANCER</span>
+        <span class="flowing-text-item accent">•</span>
+        <span class="flowing-text-item">FULL STACK DEVELOPER</span>
+        <span class="flowing-text-item accent">•</span>
+        <span class="flowing-text-item">CREATIVE DESIGNER</span>
+      </div>
+    </div>
+
+    <div class="container hero-wrapper">
+      
+      <!-- Top Greeting (Hi I am Nilu!) -->
+      <div class="hero-top-greeting">
+        <h1 class="hero-main-title">Hi I am Nilu!</h1>
+        <p class="hero-subtitle-italics">What I am: Freelancer & Full-Stack Creative Developer</p>
+      </div>
+
+      <!-- Hero Stage Grid (Photo + Left Badges + Right Badges) -->
+      <div class="hero-stage-grid">
+        
+        <!-- Left Column Floating Elements -->
+        <div class="hero-left-col">
+          <!-- Status Badge -->
+          <div class="status-badge-card hover-target">
+            <span class="status-indicator"></span>
+            <span class="status-text">Available for new opportunities</span>
+          </div>
+
+          <!-- Trusted By Stack -->
+          <div class="trusted-clients-card hover-target">
+            <div class="avatar-group">
+              <div class="avatar-circle" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80');"></div>
+              <div class="avatar-circle" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80');"></div>
+              <div class="avatar-circle" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80');"></div>
+            </div>
+            <div class="trusted-info">
+              <strong>Trusted by 30+</strong>
+              <span>Innovative Brands</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Hero Photo Frame -->
+        <div class="hero-photo-container">
+          <div class="photo-aura-glow"></div>
+          <div class="photo-frame-arch hover-target" id="hero-photo-frame">
+            <img src="assets/images/nilu_portrait.jpg" alt="Nilu Shah Portrait">
+          </div>
+        </div>
+
+        <!-- Right Column Floating Elements -->
+        <div class="hero-right-col">
+          <!-- YOB Badge -->
+          <div class="experience-tag-card hover-target">
+            <i class="fa-solid fa-rocket" style="margin-right: 6px;"></i> Pushing boundaries since 2018
+          </div>
+
+          <!-- Interactive Hidden Bio Card (From Sketch: "Small description about me in a hidden way") -->
+          <div class="hidden-bio-trigger hover-target" id="hidden-bio-card">
+            <div class="hidden-bio-header">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>Click to reveal hidden bio</span>
+              <i class="fa-solid fa-chevron-down" style="margin-left: auto;"></i>
+            </div>
+            <div class="hidden-bio-content">
+              I specialize in bridging high-concept visual aesthetics with clean, performant core architecture. Dedicated to pushing web craft forward every single day.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Bottom Action Buttons & Social Icons -->
+      <div class="hero-bottom-bar">
+        <a href="#contact" class="btn btn-primary hover-target">
+          Get in touch <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#portfolio" class="btn btn-secondary hover-target">
+          Explore My Work <i class="fa-solid fa-arrow-down"></i>
+        </a>
+
+        <div class="hero-social-links">
+          <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://behance.net" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHO AM I / ABOUT SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-tag">01 / Who Am I</div>
+      <h2 class="section-title">Crafting Digital Masterpieces With Code & Soul</h2>
+      <p class="section-subtitle">A decade of engineering award-winning experiences that elevate brands and captivate audiences globally.</p>
+
+      <div class="about-grid">
+        <div class="about-visual-box">
+          <div class="about-card-frame hover-target">
+            <div class="about-img-holder">
+              <img src="assets/images/nilu_portrait.jpg" alt="Nilu Shah Working">
+            </div>
+            <div class="about-experience-floating">
+              <div class="exp-number">10+</div>
+              <div class="exp-text">Years of Crafting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-box">
+          <p class="about-bio-lead">
+            I am Nilu Shah, a senior full-stack web engineer and creative director. My philosophy centers around <em>"learning from core everyday"</em> — mastering foundational web APIs, visual principles, and performance mechanics.
+          </p>
+          <p class="about-bio-detail">
+            Whether designing high-converting web applications, building fluid motion systems with HTML5/JS, or architecting scalable backend APIs, I approach every project as a piece of functional art.
+          </p>
+
+          <!-- Skills Progress Meters -->
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-header">
+                <span>HTML5 & CSS Architecture</span>
+                <span style="color: var(--accent-cyan);">98%</span>
+              </div>
+              <div class="skill-track"><div class="skill-bar" data-progress="98"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span>Core JavaScript ES6+ & APIs</span>
+                <span style="color: var(--accent-purple);">95%</span>
+              </div>
+              <div class="skill-track"><div class="skill-bar" data-progress="95"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span>WebGL, Canvas & Motion</span>
+                <span style="color: var(--accent-pink);">90%</span>
+              </div>
+              <div class="skill-track"><div class="skill-bar" data-progress="90"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span>UI/UX & Design Systems</span>
+                <span style="color: var(--accent-gold);">96%</span>
+              </div>
+              <div class="skill-track"><div class="skill-bar" data-progress="96"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BEST PROJECTS / PORTFOLIO SHOWCASE
+       ========================================================================== -->
+  <section class="section-padding" id="portfolio">
+    <div class="container">
+      <div class="section-tag">02 / Best Projects</div>
+      <h2 class="section-title">Selected Work & Case Studies</h2>
+      <p class="section-subtitle">Explore a curated collection of award-winning web applications built with precision and modern elegance.</p>
+
+      <!-- Portfolio Filter Tabs -->
+      <div class="portfolio-filter-bar">
+        <button class="filter-btn active hover-target" data-filter="all">All Projects</button>
+        <button class="filter-btn hover-target" data-filter="web">Web Apps</button>
+        <button class="filter-btn hover-target" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-btn hover-target" data-filter="interactive">Interactive</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card hover-target" data-category="web" data-project-id="1">
+          <div class="project-thumbnail">
+            <span class="project-badge-tag">Web Application</span>
+            <img src="assets/images/project_fintech.jpg" alt="Fintech Analytics Platform">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Aether Fintech Dashboard</h3>
+            <p class="project-desc">A real-time financial intelligence platform featuring glassmorphism UI, interactive charts, and sub-millisecond data updates.</p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">JavaScript ES6+</span>
+              <span class="tech-pill">HTML5 Canvas</span>
+              <span class="tech-pill">CSS3 Variables</span>
+              <span class="tech-pill">REST APIs</span>
+            </div>
+            <div class="project-actions">
+              <span class="project-link-btn">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card hover-target" data-category="interactive" data-project-id="2">
+          <div class="project-thumbnail">
+            <span class="project-badge-tag">Interactive Studio</span>
+            <img src="assets/images/project_ai_studio.jpg" alt="Generative AI Studio">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Nexus Generative AI Studio</h3>
+            <p class="project-desc">An intuitive creative suite empowering artists to generate 3D assets with micro-animations and seamless workflow controls.</p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">WebGL</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">Design Systems</span>
+            </div>
+            <div class="project-actions">
+              <span class="project-link-btn">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card hover-target" data-category="uiux" data-project-id="3">
+          <div class="project-thumbnail">
+            <span class="project-badge-tag">UI/UX Showcase</span>
+            <img src="assets/images/project_ecommerce.jpg" alt="Luxury E-Commerce Platform">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Vogue Luxe E-Commerce</h3>
+            <p class="project-desc">Editorial luxury fashion storefront designed for high engagement, custom cart interactions, and zero-latency page transitions.</p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS Flex/Grid</span>
+              <span class="tech-pill">UX Micro-interactions</span>
+            </div>
+            <div class="project-actions">
+              <span class="project-link-btn">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BLOG & INSIGHTS SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="blog">
+    <div class="container">
+      <div class="section-tag">03 / Blog & Articles</div>
+      <h2 class="section-title">Thoughts On Web Architecture & Core Engineering</h2>
+      <p class="section-subtitle">Deep dives into modern frontend design, performance optimization, and mastering core technologies.</p>
+
+      <div class="blog-grid">
+        
+        <article class="blog-card hover-target" data-blog-id="1">
+          <div class="blog-meta">
+            <span class="blog-meta-category">Core JavaScript</span>
+            <span>•</span>
+            <span>Jul 18, 2026</span>
+            <span>•</span>
+            <span>5 min read</span>
+          </div>
+          <h3 class="blog-title">Learning From Core Everyday: Deep Dive Into Event Loop & Microtasks</h3>
+          <p class="blog-snippet">Unpacking how asynchronous JavaScript executes under the hood, browser rendering pipelines, and writing zero-jank 60fps animations.</p>
+          <div class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></div>
+        </article>
+
+        <article class="blog-card hover-target" data-blog-id="2">
+          <div class="blog-meta">
+            <span class="blog-meta-category">CSS Architecture</span>
+            <span>•</span>
+            <span>Jun 24, 2026</span>
+            <span>•</span>
+            <span>7 min read</span>
+          </div>
+          <h3 class="blog-title">Designing Award-Winning Websites Without Heavy Frameworks</h3>
+          <p class="blog-snippet">Why mastering vanilla CSS custom properties, grid layouts, and hardware-accelerated transforms yields faster, sleeker web products.</p>
+          <div class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></div>
+        </article>
+
+        <article class="blog-card hover-target" data-blog-id="3">
+          <div class="blog-meta">
+            <span class="blog-meta-category">UI/UX Craft</span>
+            <span>•</span>
+            <span>May 10, 2026</span>
+            <span>•</span>
+            <span>4 min read</span>
+          </div>
+          <h3 class="blog-title">The Art of Micro-Animations & Cognitive Ergonomics</h3>
+          <p class="blog-snippet">How subtle spring animations and magnetic hover states transform ordinary websites into memorable interactive experiences.</p>
+          <div class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="section-tag">04 / Get In Touch</div>
+      <h2 class="section-title">Let's Build Something Extraordinary Together</h2>
+      <p class="section-subtitle">Have a vision, new opportunity, or complex technical challenge? Send a message and let's bring it to life.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info-box">
+          <div class="contact-card-item hover-target">
+            <div class="contact-icon-box"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contact-text-meta">
+              <label>Direct Email</label>
+              <span>nilu.shah@example.com</span>
+            </div>
+          </div>
+
+          <div class="contact-card-item hover-target">
+            <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text-meta">
+              <label>Location</label>
+              <span>Remote / Worldwide</span>
+            </div>
+          </div>
+
+          <div class="contact-card-item hover-target">
+            <div class="contact-icon-box"><i class="fa-regular fa-clock"></i></div>
+            <div class="contact-text-meta">
+              <label>Local Time</label>
+              <span id="local-clock">17:56 UTC+5:45</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-card" id="contact-form">
+          <div class="form-group">
+            <label for="user-name" class="form-label">Your Name</label>
+            <input type="text" id="user-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-email" class="form-label">Your Email</label>
+            <input type="email" id="user-email" class="form-input" placeholder="alex@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-subject" class="form-label">Subject</label>
+            <input type="text" id="user-subject" class="form-input" placeholder="New Project Collaboration" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-message" class="form-label">Your Message</label>
+            <textarea id="user-message" class="form-textarea" placeholder="Tell me about your project goals and timeline..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN FOOTER (FAITHFUL TO HANDWRITTEN SKETCH)
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      
+      <!-- Footer Navigation Bar (Home about Portfolio Blog Contact) -->
+      <nav class="footer-nav">
+        <a href="#hero" class="hover-target">Home</a>
+        <a href="#about" class="hover-target">About</a>
+        <a href="#portfolio" class="hover-target">Portfolio</a>
+        <a href="#blog" class="hover-target">Blog</a>
+        <a href="#contact" class="hover-target">Contact</a>
+      </nav>
+
+      <!-- Giant Signature Typography (Nilu Shah) -->
+      <h2 class="footer-signature">Nilu Shah</h2>
+
+      <!-- Bottom Row with Copyright and Social Icons -->
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          © <span id="current-year">2026</span> Nilu Shah. All rights reserved. • Designed & Engineered with perfection.
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn hover-target" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <button class="back-to-top-btn hover-target" id="back-to-top" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modal Dialog Container -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn hover-target" id="modal-close-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Modular JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
